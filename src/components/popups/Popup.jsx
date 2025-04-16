@@ -14,8 +14,7 @@ const style = {
     p: 4,
 };
 
-const AmountPopup = ({ open, onClose, onSubmit, balance, popupType }) => {
-    const [amount, setAmount] = useState('');
+const AmountPopup = ({ open, onClose, onSubmit, balance, popupType, amount, setAmount }) => {
 
     const handleSubmit = () => {
         if (amount && !isNaN(amount)) {
